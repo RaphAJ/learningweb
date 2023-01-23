@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="file:///C:/Users/RAPHAEL%20JAM/Documents/Learning%20web/index.html">Home</a><br>
+        <a href="file:///C:/Users/RAPHAEL%20JAM/Documents/Learning%20web/about.html">About Us</a><br>
+        <a href="mailto:jamraphael@gmail.com">E-mail us</a><br>
+        <a href="tel:+2348035807410">call us</a><br>
+  
+     </div>
+
+     <hr>
+     <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>all * are required</p>
+            <form action="">
+                <div class="formControl"><label for="fullname">Full Name</label><span>*</span></div>
+                <div class="formControl"><input type="text"  id="fullname" value="john dode" required></div>
+                <div class="formControl"><label for="email">Email Address</label><span>*</span></div>
+                <div class="formControl"><input type="email" id="email" placeholder="johndode@gmail.com"required></div>
+                <div class="formControl"><label for="phone">Phone</label><span>*</span></div>
+                <div class="formControl"><input type="number" id="phone"required></div>
+                <div class="formControl"><label for="gender">Gender</label><span>*</span></div>
+                <div class="formControl">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male"required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female"required>
+                </div>
+                <div class="formControl">
+                    <label for="nationality">nationality</label>
+
+
+                </div>
+                <div class="formControl">
+                    <select id="nationality">
+                        <option value="Nigerian">Nigerian</option>
+                        <option value="Ghanian">Ghanian</option>
+                        <option value="British">British</option>
+                    </select>
+                </div>
+                <div class="formControl"><label for="DOB">Date of Birth</label></div>
+                <div class="formControl"><input type="date" id="DOM"></div>
+                <div class="formControl"><label for="message">Message</label></div>
+                <div class="formControl">
+                    <textarea id="message" cols="60" rows="10" disabled>
+
+                    </textarea>
+                </div>
+                <button type="submit">
+                    Submit
+                </button>
+
+
+                
+            </form>
+        </section>
+
+        <section>
+            <h1>Login to your Account</h1>
+            <form action="">
+
+                <div class="formControl"><label for="email">Email Address</label></div>
+                <div class="formControl"><input type="email" id="email"></div>
+                <div class="formControl"><label for="password">Password</label></div>
+                <div class="formControl"><input type="password" id="Password"></div>
+                <button type="submit"disabled> Submit</button>
+
+            </form>
+        </section>
+     </main>
+</body>
+</html>

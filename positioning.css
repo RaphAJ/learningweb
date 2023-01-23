@@ -1,0 +1,430 @@
+
+:root{
+    --pCol:gray;
+    --sCol:orange;
+    --tCol:white;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+    /* background: #000; */
+}
+
+.nav{
+
+    background-color: var(--pCol);
+    color:var(--tCol);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    display: flex;
+}
+
+.nav ul li{
+    list-style-type: none;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    float: left;
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+/* .nav>div{
+    border: solid black 2px;
+} */
+
+
+
+.logo{
+    width: 20%;
+}
+
+.menu{
+    width: 80%;
+    padding-left: 45%;
+}
+
+.banner{
+    background-image: url(https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.section{
+    /* border: 10px solid red; */
+    background-image: url("./img/samuele-errico-piccarini-MyjVReZ5GLQ-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    color: beige;
+}
+.banner-header{
+    margin-left: 20px;
+    /* border: 10px solid red; */
+    padding: 0;
+
+}
+.banner-details{
+    /* border: 10px solid red;  */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    width: 200px;
+
+
+  
+}
+
+.line{
+    border: 2px solid orange;
+    height: 1px;
+    width: 40%;
+
+}
+.banner-text{
+    margin-left: 20px;
+}
+.buy-car{
+    border: 2px solid white; 
+    width: 120px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.article,.section, h1{
+    padding: 30px;
+}
+
+
+
+.sectionTwo{
+    background-image: url('https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.productCards{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 33%;
+    border: solid var(--sCol);
+    padding: 10px;
+}
+
+.card .figure img{
+    width: 100%;
+}
+
+.gallery-one{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.grid-item>img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#gridOne{
+    grid-row: 1/3;
+}
+
+.chair-icon{
+    font-size: 20px;
+    border: 2px solid red;
+   
+    background-color:  blue;
+    border: solid blue 2px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile-dropdown{
+
+    background-color: gray;
+    padding: 10px;
+    display: none;
+
+}
+
+.mobile-dropdown ul li{
+    list-style-type: none;
+}
+
+.mobile-dropdown li a {
+
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    font-family: fantasy;
+    
+
+}
+
+
+.mobile-icon{
+    /* border: solid white 2px; */
+    height: 70px;
+}
+
+
+.mobile-icon:hover .mobile-dropdown{
+    display: block;
+}
+
+.mobile-dropdown li a:hover{
+    color: var(--sCol);
+}
+
+
+
+    
+
+
+
+@media screen and (max-width:879px){
+  .mobile-nav{
+    display: block;
+    background-color: var(--pCol);
+    color:var(--tCol);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    display: flex;
+    width: 100%;
+  }
+   .mobile-logo{
+    width: 30%;
+    
+   }
+
+   .mobile-menu{
+    width: 60%;
+    
+   }
+
+   .mobile-icon img{
+    width: 10%;
+    margin-left: 400px;
+    margin-top: 20px;
+   }
+
+  .nav{
+    display: none;
+  }
+
+  .productCards{
+    padding: 30px;
+    display: flex;
+   flex-direction: column;
+}
+
+.card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gallery-one{
+    display: grid;
+    grid-template-columns: auto ;
+    
+}
+
+    
+}
+
+
+@media screen and (max-width:630px){
+    .mobile-nav{
+      display: block;
+      background-color: var(--pCol);
+      color:var(--tCol);
+      position: sticky;
+      top: 0px;
+      height: 80px;
+      display: flex;
+      width: 100%;
+    }
+     .mobile-logo{
+      width: 30%;
+      
+     }
+  
+     .mobile-menu{
+      width: 60%;
+      
+     }
+  
+     .mobile-icon img{
+      width: 10%;
+      margin-left: 300px;
+      margin-top: 20px;
+     }
+  
+    .nav{
+      display: none;
+    }
+  
+    .productCards{
+      padding: 30px;
+      display: flex;
+     flex-direction: column;
+  }
+  
+  .card{
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  
+  .gallery-one{
+      display: grid;
+      grid-template-columns: auto ;
+      
+  }
+  
+      
+  }
+
+
+  @media screen and (max-width:480px) {
+
+    .mobile-nav{
+        display: block;
+        background-color: var(--pCol);
+        color:var(--tCol);
+        position: sticky;
+        top: 0px;
+        height: 60px;
+        display: flex;
+        width: 100%;
+      }
+       .mobile-logo{
+        width: 115%;
+        
+       }
+    
+       .mobile-menu{
+        width: 40%;
+        
+       }
+    
+       .mobile-icon img{
+        width: 50%;
+        margin-left: 30px;
+        margin-top: 10px;
+       }
+    
+      .nav{
+        display: none;
+      }
+    
+      .productCards{
+        padding: 30px;
+        display: flex;
+       flex-direction: column;
+    }
+    
+    .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-one{
+        display: grid;
+        grid-template-columns: auto ;
+        
+    }
+    
+  }
+
+  @media screen and (max-width:320px) {
+
+    .mobile-nav{
+        display: block;
+        background-color: var(--pCol);
+        color:var(--tCol);
+        position: sticky;
+        top: 0px;
+        height: 60px;
+        display: flex;
+        width: 100%;
+      }
+       .mobile-logo{
+        width: 80%;
+        
+       }
+    
+       .mobile-menu{
+        width: 40%;
+        
+       }
+    
+       .mobile-icon img{
+        width: 50%;
+        margin-left: 30px;
+        margin-top: 10px;
+       }
+    
+      .nav{
+        display: none;
+      }
+    
+      .productCards{
+        padding: 30px;
+        display: flex;
+       flex-direction: column;
+    }
+    
+    .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .gallery-one{
+        display: grid;
+        grid-template-columns: auto ;
+        
+    }
+    
+  }
+  
+  
+  
+

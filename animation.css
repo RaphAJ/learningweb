@@ -1,0 +1,24 @@
+.animate{
+    /* padding: 40px;
+    border-radius: 40px;
+    border: solid black 2px;*/
+    width: 3%; 
+    animation-name: one;
+    animation-duration: 10s;
+    position: relative;
+    animation-iteration-count: infinite;
+    transition: 300ms;
+}
+
+@keyframes one {
+   0%{top: inherit; left: 5px;}
+   5%{top: inherit; left: 15px;} 
+   10%{top: inherit; left: 25px;}
+   15%{top: inherit; left: 40px;}
+   20%{top: inherit; left: 50px;}  
+   40%{top: inherit; left: 100px;}
+   60%{top: inherit; left: 75px;}
+   80%{top: inherit; left: 50px;}
+   100%{top: inherit; left: inherit;}
+}
+

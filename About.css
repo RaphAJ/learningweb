@@ -1,0 +1,97 @@
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: rgb(152, 121, 182);
+    font-weight: 900;
+}
+.section{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+.section p{
+    color:yellowgreen;
+}
+.article>p{
+    color: blue;
+}
+
+.article>.articleOne{
+    color: red;
+}
+
+p{
+   
+    font-size: 2rem;
+}
+ 
+/*font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-indent: 50px;
+    text-align: justify;*/
+
+   /* attributes that starts with*/
+    div[class^="card"]{
+        color: bisque;
+    }
+
+   /* attributes that ends with*/
+     div[class$="Card"]{
+        color: deeppink;
+     }
+
+    /*attributes that contains*/
+     div[class*="card"]{
+        color: olive;
+     }
+
+
+     label[for*="email"]{
+        color:blue;
+     }
+
+     label[for*="password"]{
+        color:black;
+     }
+
+     input[type*="email"]{
+        background-color: darkblue;
+     }
+
+     input[type*="password"]{
+        background-color: yellowgreen;
+     }
+
+     button{
+        color: white;
+        background-color: deepskyblue;
+        padding: 10px;
+     }
+
+    button:hover{
+        color: deepskyblue;
+        background-color:white;
+        padding: 10px;
+        border: solid black 2px;
+        transition: 300ms;
+     }
+
+
+
+
+
+
+     
+
+
+     
+
+
+     
+     
+
+     

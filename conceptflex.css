@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.products>div{
+    
+    border: solid black 2px;
+}
+
+.products{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.one{
+   /* order: 1;*/
+    flex: 1;
+}
+
+.two{
+    /*order: 2;*/
+    flex: 2;
+    
+    
+    
+}
+
+.three{
+   /*order: 2;*/
+   flex: 3;
+   
+}
